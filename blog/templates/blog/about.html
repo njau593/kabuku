@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for content in contents %}
+        <img src="{{ content.profile_Pic.url }}">
+        <h2>{{ content.title }}</h2>
+        <p>{{ content.content }}</p>
+    {% endfor %}
+{% endblock %}
